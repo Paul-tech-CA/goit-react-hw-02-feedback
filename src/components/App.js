@@ -4,7 +4,7 @@ import FeedbacksCounter from "./feedback/Feedback";
 const App = () => {
   return (
     <>
-      <FeedbacksCounter />
+      <FeedbacksCounter valueBad={8} />
     </>
   );
 };

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-export default function ({message}) {
-    return (
-        <div>
-            <p>{message }</p>
-        </div>
-    )
+export default function ({ message }) {
+  return (
+    <div>
+      <p>{message}</p>
+    </div>
+  );
 }

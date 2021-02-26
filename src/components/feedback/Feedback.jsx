@@ -6,17 +6,17 @@ import FeedbackOptions from "./options/FeedbackOptions";
 import Section from "./section/Section";
 
 class FeedbacksCounter extends Component {
-  static defaultProps = {
-    valueGood: 5,
-    valueNeutral: 5,
-    valueBad: 5,
-  };
+  // static defaultProps = {
+  //   valueGood: 5,
+  //   valueNeutral: 5,
+  //   valueBad: 5,
+  // };
 
-  static propTypes = {
-    valueGood: PropTypes.number.isRequired,
-    valueNeutral: PropTypes.number.isRequired,
-    valueBad: PropTypes.number.isRequired,
-  };
+  // static propTypes = {
+  //   valueGood: PropTypes.number.isRequired,
+  //   valueNeutral: PropTypes.number.isRequired,
+  //   valueBad: PropTypes.number.isRequired,
+  // };
 
   state = {
     good: 0,
@@ -49,8 +49,9 @@ class FeedbacksCounter extends Component {
           <div className={style.feedbacksChoice}>
             <FeedbackOptions handleIncrement={this.handleIncrement} />
           </div>
-          <h2 className={style.statisticsTitle}>Statistics</h2>
-          <Statistics
+          </Section>
+          <Section title="Statistics">
+           <Statistics
             good={good}
             neutral={neutral}
             bad={bad}
